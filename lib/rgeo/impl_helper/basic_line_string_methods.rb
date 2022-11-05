@@ -158,9 +158,9 @@ module RGeo
     module BasicLinearRingMethods # :nodoc:
       def initialize(factory, points)
         super
-        unless @points.size >= 4 || @points.size == 0
-          raise Error::InvalidGeometry, "LinearRings must have 0 or >= 4 points"
-        end
+        # unless @points.size >= 4 || @points.size == 0
+        #   raise Error::InvalidGeometry, "LinearRings must have 0 or >= 4 points"
+        # end
       end
 
       def geometry_type
